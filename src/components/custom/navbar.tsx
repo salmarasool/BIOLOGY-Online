@@ -12,12 +12,6 @@ function Navbar(){
   <div className="hidden sm:flex">
     <Menu />
   </div>
-<div>
-  <Avatar>
-  <AvatarImage src="https://github.com/shadcn.png" />
-  <AvatarFallback>CN</AvatarFallback>
-  </Avatar>
-</div>
 </div>
     )
 }
