@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 export default function Home() {
   return (
     <div className="w-full h-screen p-60">
-        <h1 className="max-w-[1240px] mx-auto py-1 flex justify-start items-center text-[40px] text-slate-300 font-bold sm:max-w-[80%]">
+        <h1 className="max-w-[1240px] mx-auto py-1 flex justify-center items-center text-[40px] text-slate-300 font-bold sm:max-w-[80%]">
           Welcome to BIOLOGY Online
         </h1>
       <div className='flex items-center justify-between max-w-[330px] m-auto'>
@@ -28,9 +28,9 @@ export default function Home() {
                 <FaGithub />
               </div>
             </a>
-              <Link href='/Contact' className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
-              </Link>
+            </div>
       </div>
   </div>
   )
