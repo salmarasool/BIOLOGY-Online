@@ -55,7 +55,7 @@ const Navbar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>
+        <Link href='/' legacyBehavior>
             <Image
               src={Logo}
               alt='/'
@@ -110,7 +110,7 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
+              <Link href='/' legacyBehavior>
                   <Image
                     src={Logo}
                     width='87'
@@ -133,27 +133,27 @@ const Navbar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              <Link href='/'>
+              <Link href='/' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Home
                 </li>
               </Link>
-              <Link href='/about'>
+              <Link href='/about' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   About
                 </li>
               </Link>
-              <Link href='/Courses'>
+              <Link href='/Courses' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Courses
                 </li>
               </Link>
-              <Link href='/Admissions'>
+              <Link href='/Admissions' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                  Admissions
                 </li>
               </Link>
-              <Link href='/Contact'>
+              <Link href='/Contact' legacyBehavior>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact Us
                 </li>
@@ -179,9 +179,11 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </a>
-                <Link href='/contact'
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <Link
+                  href='/contact'
+                  onClick={() => setNav(!nav)}
+                  className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                  legacyBehavior>
                     <AiOutlineMail />
                 </Link>
               </div>

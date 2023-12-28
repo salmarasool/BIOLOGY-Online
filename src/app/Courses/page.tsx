@@ -30,12 +30,12 @@ export default function About () {
             time I run Code Commerce, a Youtube channel where I teach web
             developement and various front-end technologies.
           </p>
-          <Link href='/#projects'>
+          <Link href='/#projects' legacyBehavior>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
               Check out some of my latest projects.
             </p>
           </Link>
-          <Link href='/#Home'>
+          <Link href='/#Home' legacyBehavior>
             <p className='underline cursor-pointer'>Back</p>
           </Link>
         </div>
