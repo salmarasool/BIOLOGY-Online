@@ -1,20 +1,39 @@
-import Image from "next/image";
-import { ArrowRightSquare } from "lucide-react";
-import image from "@/assets/DNA.png";
-import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import DNA from "@/assets/DNA.png"
 
 export default function Home() {
   return (
-<main className=" relative flex items-center justify-center min-h-[600px]">
-      <div className="flex flex-col gap-7 items-center justify-center ">
-        <h1 className=" text-[40px] text-white font-bold">
+    <div className="w-full h-screen p-60">
+        <h1 className="max-w-[1240px] mx-auto py-1 flex justify-center items-center text-[40px] text-slate-300 font-bold sm:max-w-[80%]">
           Welcome to BIOLOGY Online
         </h1>
-        <Button>
-          <ArrowRightSquare className="mr-2 h-4 w-4" />Learn More
-        </Button>
+      <div className='flex items-center justify-between max-w-[330px] m-auto'>
+            <a
+              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a
+              href='https://github.com/fireclint'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaGithub />
+              </div>
+            </a>
+            <Link href='/contact'>
+               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <AiOutlineMail />
+                </div>
+            </Link>
       </div>
-      <Image className="absolute w-full h-[600px] z-[-1]" src={image} alt="Bg"/>
-    </main>
+  </div>
   )
-}
+};

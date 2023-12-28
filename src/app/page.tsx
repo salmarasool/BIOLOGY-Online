@@ -1,11 +1,16 @@
 import Hero from "@/components/custom/hero";
-import Blogs from "@/components/custom/blogs";
+import Navbar from "@/components/custom/navbar";
+
+// import Blogs from "@/components/custom/blogs";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Navbar/>
+      {/* Navbar */}
+      <Hero/>
       {/* Cards */}
-      <Blogs />
+
+      {/* <Blogs /> */}
 
       {/* Footer */}
 
