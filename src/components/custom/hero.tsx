@@ -1,7 +1,6 @@
 import { Link } from "lucide-react";
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import DNA from "@/assets/DNA.png"
 
 export default function Home() {
   return (
