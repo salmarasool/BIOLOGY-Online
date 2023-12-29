@@ -127,7 +127,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Let&#39;s build something legendary together
+                Let&#39;s start learning Biology Online
               </p>
             </div>
           </div>

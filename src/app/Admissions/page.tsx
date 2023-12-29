@@ -1,49 +1,74 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-// import AboutImg from '../public/assets/about.jpg';
-
-export default function About () {
+"use client"
+ 
+export default function Form () {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-        <div className='col-span-2'>
-          <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
-            About
-          </p>
-          <h2 className='py-4'>Who I Am</h2>
-          <p className='py-2 text-gray-600'>
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
-          </p>
-          <p className='py-2 text-gray-600'>
-            I started web developement in 2013 managing multiple e-commerce
-            websites on CMS platforms such as WordPress, BigCommerce, and
-            Shopify. I have experience working directly with clients and taking
-            mock wireframes all the way to deployed applications. In my spare
-            time I run Code Commerce, a Youtube channel where I teach web
-            developement and various front-end technologies.
-          </p>
-          <Link href='/#projects' legacyBehavior>
-            <p className='py-2 text-gray-600 underline cursor-pointer'>
-              Check out some of my latest projects.
-            </p>
-          </Link>
-          <Link href='/#Home' legacyBehavior>
-            <p className='underline cursor-pointer'>Back</p>
-          </Link>
-        </div>
-        {/* <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image src={AboutImg} className='rounded-xl' alt='/' />
-        </div> */}
-      </div>
+    <div>
+    <div className="">
+      <h1>Apply Online</h1>
     </div>
-  );
-};
+      <form>
+      <div className="flex flex-row">
+        <label className='uppercase text-sm py-2' htmlFor="fname">First name:</label>
+        <input className='border-2 rounded-lg p-3 flex border-gray-300'type="text" id="fname" name="fname"/>
+        <label className='uppercase text-sm py-2' htmlFor="lname">Last name:</label>
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" id="lname" name="lname"/>
+      </div>
+      <div className="flex flex-row p-10 justify-around items-start">
+      <p className=" justify-around p-10">
+      <label className='uppercase text-clip px-28'>Gender:</label>
+        <input className='px-10' type="radio" name="gender" value="m"/>Male
+        <input className='px-10' type="radio" name="gender" value="f"/>Female
+      </p>
+      <p className="flex">
+      <label className='justify-center uppercase text-sm py-2'>Nationality:</label>
+        <select className='border-2 rounded-lg p-3 flex border-gray-300' name="countries" multiple>
+          <option>Pakistan</option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        </p>
+      </div>
+      <div>
+        Subjects of Interest:
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="checkbox" name="interests" value="Biology"/>Proteomics
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="checkbox" name="interests" value="Biology"/>Ecology
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="checkbox" name="interests" value="Biology"/>Bioinformatics
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="checkbox" name="interests" value="Biology"/>Biochemistry
+      </div>
+      <div>
+      Mobile No:
+      <input
+        className='border-2 rounded-lg p-3 flex border-gray-300'
+        type='text'
+        name='phone'
+        />    
+      Email:
+      <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" name="email" id="email" />
+      </div>
+      <div>
+        Password:
+      <input className='border-2 rounded-lg p-3 flex border-gray-300' type="password" name="password" size={15} maxLength={30}/>
+        Re-enter Password:
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="password" name="password" size={15} maxLength={30}/>
+      </div>
+      <div>
+        Comments:
+        <textarea className='border-2 rounded-lg p-3 flex border-gray-300' name="" id="" cols="20" rows="6">Enter Your Comments</textarea>
+        </div>
+        <div>
+        Upload Profile Picture:
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="file"/>
+        <br />
+        <br />
+        <input className='border-2 rounded-lg p-3 flex border-gray-300' type="submit" value="Upload"/>
+        <br />
+        <button className='border-2 rounded-lg p-3 flex border-gray-300' type='submit'>Submit</button> 
+        </div>
+    </form>
 
+  </div>                 
+)};
+        
