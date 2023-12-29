@@ -162,7 +162,7 @@ const Navbar = () => {
             <div className='pt-40'>
               <div className='flex items-stretch justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/salma-rasool-15abb7246//'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -171,7 +171,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/salmarasool'
                   target='_blank'
                   rel='noreferrer'
                 >
